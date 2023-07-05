@@ -8,6 +8,8 @@ BILI_JCT = ""
 BUVID3 = ""
 # 视频的bvid（从url中获取）
 bid  = "BVxxxx"
+# 弹幕的文字内容
+content = ""
 
 async def main():
     # 实例化 Credential 类
@@ -23,7 +25,7 @@ async def main():
             # 打印视频弹幕数
             print(f"当前弹幕数：{info['stat']['danmaku']}")
             # 发弹幕
-            d = Danmaku(text='邀浪同歌，热辣今夏！')
+            d = Danmaku(text=content)
             await v.send_danmaku(0, d)
             if count%6 == 0:
                 print("暂停30s")

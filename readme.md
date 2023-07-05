@@ -13,4 +13,6 @@ BILI_JCT = ""
 BUVID3 = ""
 # 视频的bvid（从url中获取）
 bid  = "BVxxxx"
+# 弹幕的文字内容
+content = ""
 ```
